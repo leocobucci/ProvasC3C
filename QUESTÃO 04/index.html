@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuidyMoura</title>
+    
+</head>
+
+<body style="text-align: center; background-color: rgb(247, 247, 209);">
+    <h1>LuidyMoura</h1>
+    <br/>
+    <form name="">
+        Digite um número:  <input id="n" type="number"><br> 
+        <br/>
+        <button onclick="exibir()">EXIBIR</button><br/>
+    </form>
+
+    <script LANGUAGE="JavaScript" type="text/javascript">      
+				
+		function exibir(){
+            var n = parseFloat(document.getElementById("n").value);
+
+            for(var i=1 ; i<=n ; i++){
+                if(i % 5 == 0) {
+                    document.write('Luidy, ');
+                }else if(i % 9 == 0) {
+                    document.write('Moura, ');
+                }else {
+                    document.write(i + ", ");
+                }
+            }
+            document.write(' FIM DA EXECUÇÃO!.')
+        }
+
+    </script>
+</head>
+</html>
